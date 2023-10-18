@@ -15,7 +15,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family:'DM Sans', sans-serif;
     min-width: 240px;
 }
 /*Header*/
@@ -105,8 +105,7 @@ header .figure_header{
     top: 0;
     right: -250px;
     background: white;
-    width: 250px;
-    height: 72vh;
+    height: 100vh;
     padding: 40px;
     z-index: 1;
     transition: all 300ms;
@@ -175,8 +174,6 @@ header .figure_header{
 .menu #btn_menu:hover{
     background:rgba(12, 12, 12, 0.1);
 }
-
-
 header .menu-header{
     justify-content: end;
     width: 100px;
@@ -188,10 +185,11 @@ header .menu-header{
     padding: 16px;
     margin-block: 3px;
 }
+
 /*contenido*/
-main{
-    height: 200px;
-}
+
+/* quienes somos */  
+
 
 /* para el footer */
 .pie-pagina {
