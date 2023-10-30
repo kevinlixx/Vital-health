@@ -205,6 +205,19 @@ main{
     position: absolute;
     margin-top: 20px;
 }
+.div--ventanaRegistro{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 250px;
+    background-color: var(--font-color);
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 3px 6px 29px 4px var(--fountain);
+    position: absolute;
+    margin-top: 20px;
+}
 .cerrar-ventana{
     position: absolute;
     right: 10px;

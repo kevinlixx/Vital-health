@@ -77,3 +77,12 @@ header .menu-section{
         transform: translateY(15px);
     }/*El tercer fotograma (100%) establece que el elemento se desplazará hacia abajo otros 15 píxeles*/
   }
+
+/* iniciar sesion  */
+.div--ventana {
+    width: 30%;
+  }
+
+.div--ventanaRegistro{
+    width: 40%;
+}
