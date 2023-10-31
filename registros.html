@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>vital health</title>
+        <script src="https://kit.fontawesome.com/79e6024c63.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style-admin.css">
+        <link rel="stylesheet" href="./css/tablet-admin.css" media="screen and (min-width: 600px)"/>
+        <link rel="stylesheet" href="./css/desktop-admin.css" media="screen and (min-width: 800px)"/>
+    </head>
+<body>
+    <header>
+        <section class="section_header">
+            <figure class="figure_header"> 
+                <img 
+                src="./img/logo_header.svg  " 
+                alt="logo de vital health"
+                />  
+                <figcaption></figcaption> 
+            </figure>
+            <div class="menu menu-header">
+                    <figure id="btn_menu">
+                        <img src="./img/menu.svg" alt="menu"/>  
+                        <figcaption></figcaption> 
+                    </figure>                
+                <div id="back_menu"></div>
+                <nav id="nav" class="menu-section">
+                    <img src="img/logo_header.svg" alt="">
+                    <ul> 
+                        <li><a href="">Registros</a></li>
+                        <li><a href="javascript:abrirIngreso()" id="selected">Iniciar sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="container--ingreso">
+        <!-- ventana que emerge para iniciar sesion -->
+        <div class="div--ventana" id="ventIngre">
+            <div class="cerrar-ventana"><a href="javascript:cerrarIngreso()"><i class="fa-solid fa-xmark"></i></a></div>
+            <div>
+                <h2 class="title--ventana">Iniciar sesión</h2>
+                <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
+                <input type="password" name="" placeholder="contraseña" id="" class="input--inicio">
+                <input type="button" type="submit" value="ingresar" class="input--button">
+                <a href="javascript:abrirRegistro()" class="opcion--registro">registrarse</a>
+            </div>
+        </div>
+        <!-- ventana que emerge para registrarse -->
+        <div class="div--ventanaRegistro" id="ventRegis">
+            <div class="cerrar-ventana"><a href="javascript:cerrarRegistro()"><i class="fa-solid fa-xmark"></i></a></div>
+            <div>
+                <h2 class="title--ventana">Registrarse</h2>
+                <div class="div--registro">
+                    <input type="text" name="" placeholder="primer nombre" id="" class="input--registro">
+                    <input type="text" name="" placeholder="segundo nombre" id="" class="input--registro">
+                </div>
+                <div class="div--registro">
+                    <input type="text" name="" placeholder="primer apellido" id="" class="input--registro">
+                    <input type="text" name="" placeholder="segundo apellido" id="" class="input--registro">
+                </div>
+                <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
+                <input type="password" name="" placeholder="contraseña" id="" class="input--inicio">
+                <input type="password" name="" placeholder="confirmar contraseña" id="" class="input--inicio">
+                <input type="button" type="submit" value="registrar" class="input--button">
+            </div>
+        </div>
+        
+        <!-- contenido para los Registros -->
+            <div class="div--registros">
+                <h1>Registros</h1>
+                <div class="div--formulario">
+                    <h2>Fecha:</h2>
+                    <section class="section--info">
+                        <p class="subtitle">Nombres:</p>
+                        <p>Jose</p>
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Apellidos:</p>
+                        <p>Lis Lozano</p>   
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Correo:</p>
+                        <p>lol@gmail</p>   
+                    </section>
+                    <a href="">ver mas</a>
+                </div> 
+                <div class="div--formulario">
+                    <h2>Fecha:</h2>
+                    <section class="section--info">
+                        <p class="subtitle">Nombres:</p>
+                        <p>Jose</p>
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Apellidos:</p>
+                        <p>Lis Lozano</p>   
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Correo:</p>
+                        <p>lol@gmail</p>   
+                    </section>
+                    <a href="">ver mas</a>
+                </div> 
+                <div class="div--formulario">
+                    <h2>Fecha:</h2>
+                    <section class="section--info">
+                        <p class="subtitle">Nombres:</p>
+                        <p>Jose</p>
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Apellidos:</p>
+                        <p>Lis Lozano</p>   
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Correo:</p>
+                        <p>lol@gmail</p>   
+                    </section>
+                    <a href="">ver mas</a>
+                </div> 
+                <div class="div--formulario">
+                    <h2>Fecha:</h2>
+                    <section class="section--info">
+                        <p class="subtitle">Nombres:</p>
+                        <p>Jose</p>
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Apellidos:</p>
+                        <p>Lis Lozano</p>   
+                    </section>
+                    <section  class="section--info">
+                        <p class="subtitle">Correo:</p>
+                        <p>lol@gmail</p>   
+                    </section>
+                    <a href="">ver mas</a>
+                </div> 
+                   
+            </div>
+            
+        </div>
+        <div class="container--export">
+            <div class="export--excel">
+                    <p>Exportar a excel</p>
+                    <figure class="figure_excel"> 
+                        <img 
+                        src="./img/logo-excel.png" 
+                        alt="logo de vital health"
+                        />  
+                        <figcaption></figcaption> 
+                    </figure>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="pie-pagina">
+        <div class="footer_copy">
+             <small>&copy; 2023 <b>Vital Health</b> - Todos los Derechos Reservados.</small>
+        </div>
+     </footer>
+     <script src="js/script.js"></script>
+     <script>
+        /* funcion para el ingreso */
+        function abrirIngreso(){
+            document.getElementById("ventIngre").style.display="flex"
+            nav.style.right = "-250px";
+            background_menu.style.display = "none";
+            document.getElementById("ventRegis").style.display="none"
+        }
+        function cerrarIngreso(){
+            document.getElementById("ventIngre").style.display="none"
+        }
+        /* funcion para el registro */
+        function abrirRegistro(){
+            document.getElementById("ventRegis").style.display="flex"
+            document.getElementById("ventIngre").style.display="none"
+        }
+        function cerrarRegistro(){
+            document.getElementById("ventRegis").style.display="none"
+        }
+     </script>
+     
+</body>
+</html>
