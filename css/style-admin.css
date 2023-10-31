@@ -209,6 +209,7 @@ main{
     box-shadow: 3px 6px 29px 4px var(--fountain);
     position: absolute;
     margin-top: 20px;
+    z-index: 1;
 }
 .div--ventanaRegistro{
     display: none;
@@ -222,6 +223,7 @@ main{
     box-shadow: 3px 6px 29px 4px var(--fountain);
     position: absolute;
     margin-top: 20px;
+    z-index: 1;
 }
 .cerrar-ventana{
     position: absolute;
@@ -339,7 +341,7 @@ main{
 .export--excel {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 135px;
     align-items: center;
     background-color: var(--green-gray);
     border-radius: 50px;
