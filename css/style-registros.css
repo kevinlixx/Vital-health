@@ -287,7 +287,69 @@ main{
     color: var(--sandy);
 }
 
+/* para el contenido de los formualrios ya registrados*/
+.div--registros{
+    margin-top: 15px;
+    width: 80%;
+}
+.div--registros h1{
+    text-align: center;
+    color: var(--paradiso);
+}
 
+.div--formulario{
+    margin-top: 20px;
+    box-shadow: 3px 6px 29px 4px var(--fountain);
+    padding: 10px;
+    border-radius: 5px;
+}
+.div--formulario h2{
+    text-align: center;
+}
+.div--formulario p{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.subtitle{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.div--formulario a{
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+    color:  var(--paradiso);
+    
+}
+.section--info{
+    display: flex;
+}
+
+/* para la exportancion a excel */
+.container--export{
+    display: flex;
+    justify-content: flex-end; /* Ajusta a 'flex-end' para la esquina derecha */
+    position: sticky;
+    bottom: 20px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.export--excel {
+    display: flex;
+    justify-content: flex-end;
+    width: 135px;
+    align-items: center;
+    background-color: var(--green-gray);
+    border-radius: 50px;
+    padding: 5px;
+}
+.export--excel p{
+    color: var(--font-color);
+}
 
 .figure_excel img{
     width: 50px;
