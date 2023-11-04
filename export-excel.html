@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style-registros.css">
+        <link rel="stylesheet" href="./css/style-export.css">
         <link rel="stylesheet" href="./css/tablet-admin.css" media="screen and (min-width: 600px)"/>
         <link rel="stylesheet" href="./css/desktop-admin.css" media="screen and (min-width: 800px)"/>
     </head>
@@ -41,11 +41,14 @@
         </a>
     </header>
     <main>
-        <div class="container--logisn"> 
-            <div class="container--ingreso">
-        <!-- ventana que emerge para iniciar sesion -->
+        <div class="container--ingreso" id="containerIng">
+            
+            <!-- ventana que emerge para iniciar sesion -->
+            
             <div class="div--ventana" id="ventIngre">
+                
                 <div class="cerrar-ventana"><a href="javascript:cerrarIngreso()"><i class="fa-solid fa-xmark"></i></a></div>
+                
                 <div>
                     <h2 class="title--ventana">Iniciar sesión</h2>
                     <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
@@ -53,7 +56,9 @@
                     <input type="button" type="submit" value="ingresar" class="input--button">
                     <a href="javascript:abrirRegistro()" class="opcion--registro">registrarse</a>
                 </div>
+                
             </div>
+        
             <!-- ventana que emerge para registrarse -->
             <div class="div--ventanaRegistro" id="ventRegis">
                 <div class="cerrar-ventana"><a href="javascript:cerrarRegistro()"><i class="fa-solid fa-xmark"></i></a></div>
@@ -73,94 +78,28 @@
                     <input type="button" type="submit" value="registrar" class="input--button">
                 </div>
             </div>
+        </div>
+        <div class="div--container-exportar">
+            <div class="div--exportar">
+                <h1>Exportar</h1>
+                <div class="div--container-formulario">
+                    <div class="div--formulario-export">
+                        <p>Dame la primera fecha que deseas exportar</p>
+                        <input type="date" name="" id="" placeholder="">
+                        <p>Digita hasta que fecha deseas exportar</p>
+                        <input type="date" name="" id="" placeholder="">
+                        <p>¿Deseas incluir los registros que ya se exportaron anteriormente?</p>
+                        <select id="respuesta">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                        <input type="button" type="submit" value="exportar" class="input--button">
             
-            <!-- contenido para los Registros -->
-                <div class="div--registros">
-                    <h1>Registros</h1>
-                    <div class="div--formulario">
-                        <h2>Fecha: 20/10/2023</h2>
-                        <section class="section--info">
-                            <p class="subtitle">Nombres:</p>
-                            <p>Jose</p>
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Apellidos:</p>
-                            <p>Lis Lozano</p>   
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Correo:</p>
-                            <p>lol@gmail</p>   
-                        </section>
-                        <a href="">ver mas</a>
-                    </div> 
-                    <div class="div--formulario">
-                        <h2>Fecha:</h2>
-                        <section class="section--info">
-                            <p class="subtitle">Nombres:</p>
-                            <p>Jose</p>
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Apellidos:</p>
-                            <p>Lis Lozano</p>   
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Correo:</p>
-                            <p>lol@gmail</p>   
-                        </section>
-                        <a href="">ver mas</a>
-                    </div> 
-                    <div class="div--formulario">
-                        <h2>Fecha:</h2>
-                        <section class="section--info">
-                            <p class="subtitle">Nombres:</p>
-                            <p>Jose</p>
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Apellidos:</p>
-                            <p>Lis Lozano</p>   
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Correo:</p>
-                            <p>lol@gmail</p>   
-                        </section>
-                        <a href="">ver mas</a>
-                    </div> 
-                    <div class="div--formulario">
-                        <h2>Fecha:</h2>
-                        <section class="section--info">
-                            <p class="subtitle">Nombres:</p>
-                            <p>Jose</p>
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Apellidos:</p>
-                            <p>Lis Lozano</p>   
-                        </section>
-                        <section  class="section--info">
-                            <p class="subtitle">Correo:</p>
-                            <p>lol@gmail</p>   
-                        </section>
-                        <a href="">ver mas</a>
-                    </div> 
-                    
-                </div>
-                
-            </div>
-            <div class="container--export">
-                <a href="./export-excel.html" class="">
-                    <div class="export--excel">
-                            <p>Exportar a excel</p>
-                            <figure class="figure_excel"> 
-                                <img 
-                                src="./img/logo-excel.png" 
-                                alt="logo de vital health"
-                                />  
-                                <figcaption></figcaption> 
-                            </figure>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
-    </main>
+        </main>
     <footer class="pie-pagina">
         <div class="footer_copy">
              <small>&copy; 2023 <b>Vital Health</b> - Todos los Derechos Reservados.</small>
@@ -170,6 +109,7 @@
      <script>
         /* funcion para el ingreso */
         function abrirIngreso(){
+            document.getElementById("containerIng").style.background="rgba(0,0,0,0.5)"
             document.getElementById("ventIngre").style.display="flex"
             nav.style.right = "-250px";
             background_menu.style.display = "none";
@@ -187,6 +127,5 @@
             document.getElementById("ventRegis").style.display="none"
         }
      </script>
-     
 </body>
 </html>

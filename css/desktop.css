@@ -68,6 +68,7 @@ header .menu-section{
     padding: 0;
     display: block;
 }
+
 @keyframes move-vector {
     0%{
         transform: translateY(15px); 

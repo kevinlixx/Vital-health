@@ -79,10 +79,19 @@ header .menu-section{
   }
 
 /* iniciar sesion  */
+.div--registros{
+    width: 50%;
+}
 .div--ventana {
     width: 30%;
   }
 
 .div--ventanaRegistro{
     width: 40%;
+}
+.div--exportar{
+    width: 40%;
+}
+.div--formulario-export {
+    width: 80%;
 }
