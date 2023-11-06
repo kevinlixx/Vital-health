@@ -56,21 +56,21 @@
             <!-- ventana que emerge para registrarse -->
             <div class="div--ventanaRegistro" id="ventRegis">
                 <div class="cerrar-ventana"><a href="javascript:cerrarRegistro()"><i class="fa-solid fa-xmark"></i></a></div>
-                <div>
+                <form action="/registro" method="post">
                     <h2 class="title--ventana">Registrarse</h2>
                     <div class="div--registro">
-                        <input type="text" name="" placeholder="primer nombre" id="" class="input--registro">
-                        <input type="text" name="" placeholder="segundo nombre" id="" class="input--registro">
+                        <input type="text" id="firstName" placeholder="primer nombre"  class="input--registro">
+                        <input type="text" id="secondName" placeholder="segundo nombre" class="input--registro">
                     </div>
                     <div class="div--registro">
-                        <input type="text" name="" placeholder="primer apellido" id="" class="input--registro">
-                        <input type="text" name="" placeholder="segundo apellido" id="" class="input--registro">
+                        <input type="text" id="firstLastName" placeholder="primer apellido"  class="input--registro">
+                        <input type="text" id="secondLastName" placeholder="segundo apellido"  class="input--registro">
                     </div>
-                    <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
-                    <input type="password" name="" placeholder="contraseña" id="" class="input--inicio">
+                    <input type="email" name="" placeholder="correo electronico" id="email" class="input--inicio">
+                    <input type="password" name="" placeholder="contraseña" id="password" class="input--inicio">
                     <input type="password" name="" placeholder="confirmar contraseña" id="" class="input--inicio">
-                    <input type="button" type="submit" value="registrar" class="input--button">
-                </div>
+                    <input type="button" type="submit" id="registrar" value="registrar" class="input--button" onclick="registroAdmin()">
+                </form>
             </div>
         </div>
     </main>
@@ -80,6 +80,9 @@
         </div>
      </footer>
      <script src="js/script.js"></script>
+
+
+
      <script>
         /* funcion para el ingreso */
         function abrirIngreso(){
@@ -99,6 +102,47 @@
         function cerrarRegistro(){
             document.getElementById("ventRegis").style.display="none"
         }
+        function use(database) {
+            const mongoClient = require("mongodb").MongoClient;
+
+            // Conectarse a la base de datos
+            mongoClient.connect("mongodb+srv://vital-health:5yCgL5wLGdlrOkQq@vitalbd.zrbjbcw.mongodb.net/", {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+            }, (err, client) => {
+                if (err) {
+                console.log(err);
+                return;
+                }
+
+                // Obtener la colección
+                db = client.db(database);
+            });
+            }
+
+        /* conecion a la base de datos */
+        function registroAdmin() {
+
+            const firstName = document.getElementById("firstName").value;
+            const secondName = document.getElementById("secondName").value;
+            const firstLastName = document.getElementById("firstLastName").value;
+            const secondLastName = document.getElementById("secondLastName").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            db.usuarios-admin.insertOne({
+                Primer_nombre: firstName,
+                segundo_nombre: secondName,
+                Primer_apellido: firstLastName,
+                segundo_apellido: secondLastName,
+                correo_electronico: email,
+                contrasena: password,
+            });
+            }
+
+// Evento de clic del botón "Guardar"
+document.getElementById("registrar").addEventListener("click", registroAdmin);
+
      </script>
 </body>
 </html>
