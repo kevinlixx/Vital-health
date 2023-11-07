@@ -1,35 +1,43 @@
-:root{
+
+:root {
     --turquoise: #568281;
     --font-color: #FFFFFF;
     --section-color: #D3E1E1;
     --beige: #d6c19d;
-    --black: #000000 ;
-    --orange: #fdb249 ;
-    --hour_turquoise: #20D2C8; 
+    --black: #000000;
+    --orange: #fdb249;
+    --hour_turquoise: #20D2C8;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
     min-width: 320px;
 }
-header .menu-section{
+
+header .menu-section {
     display: flex;
 }
-.menu ul{
+
+.menu ul {
     height: auto;
 }
-.menu ul li{
+
+.menu ul li {
     margin-top: 0px;
 }
-.menu nav img{
+
+.menu nav img {
     display: none;
 }
-.menu nav{
+
+.menu nav {
     position: static;
     right: none;
     height: auto;
@@ -37,7 +45,8 @@ header .menu-section{
     padding: 0px;
 
 }
-.menu-section{
+
+.menu-section {
     justify-content: end;
     width: 100px;
     height: 40px;
@@ -47,20 +56,24 @@ header .menu-section{
     align-items: center;
     padding: 16px;
     margin-block: 3px;
-  }
-.menu-section li{
+}
+
+.menu-section li {
     display: inline-block;
 }
-.menu-section li a{
+
+.menu-section li a {
     display: inline-block;
-   font-size: 1.4rem;
-   margin: 5px;
-   text-decoration: none;
-   color: var(--turquoise);
+    font-size: 1.4rem;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--turquoise);
 }
-.menu #btn_menu{
+
+.menu #btn_menu {
     display: none;
 }
+
 .menu ul {
     display: flex;
     position: relative;
@@ -68,12 +81,39 @@ header .menu-section{
     padding: 0;
     display: block;
 }
+
 @keyframes move-vector {
-    0%{
-        transform: translateY(15px); 
-    }50%{ /*El primer fotograma (0%) establece que el elemento se desplazará hacia abajo (translateY(15px)) 15 píxeles desde su posición original.*/
-        transform: translateY(0px);
-    }100%{/*El segundo fotograma (50%) establece que el elemento volverá a su posición original (0 píxeles de desplazamiento). */
+    0% {
         transform: translateY(15px);
-    }/*El tercer fotograma (100%) establece que el elemento se desplazará hacia abajo otros 15 píxeles*/
-  }
+    }
+
+    50% {
+        /*El primer fotograma (0%) establece que el elemento se desplazará hacia abajo (translateY(15px)) 15 píxeles desde su posición original.*/
+        transform: translateY(0px);
+    }
+
+    100% {
+        /*El segundo fotograma (50%) establece que el elemento volverá a su posición original (0 píxeles de desplazamiento). */
+        transform: translateY(15px);
+    }
+
+    /*El tercer fotograma (100%) establece que el elemento se desplazará hacia abajo otros 15 píxeles*/
+}
+
+.row--left {
+    flex-direction: row-reverse;
+}
+.row--right {
+    flex-direction: row;
+}
+.image_svg img {
+    height: auto;
+    width: auto;
+    max-width: 99%;
+}
+.div--info-me{
+    padding: 30px;
+}
+.text p{
+    font-size: 20px;
+}
