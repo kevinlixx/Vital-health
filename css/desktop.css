@@ -112,8 +112,12 @@ header .menu-section {
     max-width: 99%;
 }
 .div--info-me{
-    padding: 30px;
+    padding: 25px;
 }
 .text p{
     font-size: 20px;
+}
+.text ul {
+    font-size: 20px;
+    margin-top: 5%;
 }

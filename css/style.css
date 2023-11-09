@@ -218,7 +218,7 @@ header .menu-header {
 }
 
 .text-colored {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300px;
     /* Centra el texto */
     text-align: center;
@@ -322,6 +322,19 @@ header .menu-header {
     order: 1;
     border-radius: 10%;
 }
+
+/* Servicios */
+
+.text ul {
+    list-style: none;
+
+    margin-top: 4%;
+}
+.text ul li{
+    margin-top: 9px;
+}
+
+
 
 /* Formulario de registro */
 .formulario {
