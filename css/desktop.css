@@ -1,4 +1,3 @@
-
 :root {
     --turquoise: #568281;
     --font-color: #FFFFFF;
@@ -112,6 +111,7 @@ header .menu-section {
     max-width: 99%;
 }
 .div--info-me{
+
     padding: 25px;
 }
 .text p{

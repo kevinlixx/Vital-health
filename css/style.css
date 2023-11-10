@@ -502,6 +502,92 @@ header .menu-header {
 
 
 
+.text-colored {
+    font-size: 30px;
+    font-weight: 300px;
+    /* Centra el texto */
+    text-align: center;
+    /* Ajusta las palabras largas */
+    word-wrap: break-word;
+    /* Propiedad de gradiante para establecer la combinación de colores para el titulo */
+    background: linear-gradient(90deg, #3ca6b4, #f4a26c, #3e8e98);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: changeColor 5s linear infinite;
+}
+
+/* historia */
+.div--info-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(169, 215, 221, 0.5);
+    border-radius: 5%;
+    margin-top: 7%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.row--right,
+.row--left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* "col-md-6", se utiliza como parte de un sistema de cuadrícula. */
+.col-md-6 {
+    justify-content: center;
+    display: flex;
+}
+
+.text {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    order: 2;
+    /* Cambia el orden en modo computadora */
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.text p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.text h1 {
+    color: #3e8e98;
+}
+
+/* Aplicación de animación para las imagenes */
+@keyframes escalar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.image_svg {
+    display: flex;
+    margin-top: 10px;
+    max-width: 100%;
+    justify-content: center;
+    animation: escalar 2s linear infinite;
+}
+
+
+.image_svg img {
+    width: auto;
+    /* Ajusta el ancho de la imagen automáticamente */
+    height: auto;
+    /* Ajusta la altura de la imagen automáticamente */
+    max-width: 50%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    order: 1;
+    border-radius: 10%;
+}
+
 /* para el footer */
 .pie-pagina {
     position: relative;
