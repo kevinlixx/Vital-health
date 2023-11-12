@@ -20,9 +20,8 @@ html {
     font-family: 'DM Sans', sans-serif;
     min-width: 240px;
 }
-
 /*Header*/
-header {
+header{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -201,7 +200,7 @@ header .menu-header {
     margin-block: 3px;
 }
 
-/*contenido*/
+
 
 /* quienes somos */
 
