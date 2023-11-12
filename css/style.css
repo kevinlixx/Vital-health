@@ -275,7 +275,7 @@ header .menu-header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 24px;
+
 }
 
 .div--info-me:nth-child(even) {
@@ -295,7 +295,7 @@ header .menu-header {
 }
 
 .text {
-    margin-top: 25px;
+
     text-align: center;
     font-size: 1.5rem;
     /* Cambia el orden en modo computadora */
@@ -353,6 +353,16 @@ header .menu-header {
 }
 
 /* Servicios */
+.text p {
+    display: flex;
+    align-items: center;
+    /* Ajusta el margen inferior según sea necesario */
+}
+/* Iconos */
+.text svg {
+    height: 35px;
+    width: calc(7rem - 1px);
+}
 
 /* Formulario de registro */
 .formulario {
@@ -477,23 +487,24 @@ header .menu-header {
 }
 
 /* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
+.formulario_grupo-correcto .formulario_validacion-estado {
 	color: #1ed12d;
 	opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label {
+.formulario_grupo-incorrecto .formulario_label {
 	color: #bb2929;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formulario_grupo-incorrecto .formulario_validacion-estado {
 	color: #bb2929;
 	opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input {
+.formulario_grupo-incorrecto .formulario_input {
 	border: 3px solid #bb2929;
 }
+
 
 
 /* ----- -----  Mediaqueries ----- ----- */
