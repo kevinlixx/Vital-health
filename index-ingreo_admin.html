@@ -97,17 +97,14 @@
         }
         function cerrarIngreso(){
             document.getElementById("ventIngre").style.display="none"
-            document.getElementById("background_main").classList.remove("borroso");
         }
         /* funcion para el registro */
         function abrirRegistro(){
             document.getElementById("ventRegis").style.display="flex"
             document.getElementById("ventIngre").style.display="none"
-            document.getElementById("background_main").classList.add("borroso");
         }
         function cerrarRegistro(){
             document.getElementById("ventRegis").style.display="none"
-            document.getElementById("background_main").classList.remove("borroso");
         }
         function use(database) {
             const mongoClient = require("mongodb").MongoClient;
