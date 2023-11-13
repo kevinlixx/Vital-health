@@ -46,6 +46,38 @@
     </header>
     <main>
         <div class="container--logisn"> 
+            <div class="container--ingreso">
+        <!-- ventana que emerge para iniciar sesion -->
+            <div class="div--ventana" id="ventIngre">
+                <div class="cerrar-ventana"><a href="javascript:cerrarIngreso()"><i class="fa-solid fa-xmark"></i></a></div>
+                <div>
+                    <h2 class="title--ventana">Iniciar sesión</h2>
+                    <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
+                    <input type="password" name="" placeholder="contraseña" id="" class="input--inicio">
+                    <input type="button" type="submit" value="ingresar" class="input--button">
+                    <a href="javascript:abrirRegistro()" class="opcion--registro">registrarse</a>
+                </div>
+            </div>
+            <!-- ventana que emerge para registrarse -->
+            <div class="div--ventanaRegistro" id="ventRegis">
+                <div class="cerrar-ventana"><a href="javascript:cerrarRegistro()"><i class="fa-solid fa-xmark"></i></a></div>
+                <div>
+                    <h2 class="title--ventana">Registrarse</h2>
+                    <div class="div--registro">
+                        <input type="text" name="" placeholder="primer nombre" id="" class="input--registro">
+                        <input type="text" name="" placeholder="segundo nombre" id="" class="input--registro">
+                    </div>
+                    <div class="div--registro">
+                        <input type="text" name="" placeholder="primer apellido" id="" class="input--registro">
+                        <input type="text" name="" placeholder="segundo apellido" id="" class="input--registro">
+                    </div>
+                    <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
+                    <input type="password" name="" placeholder="contraseña" id="" class="input--inicio">
+                    <input type="password" name="" placeholder="confirmar contraseña" id="" class="input--inicio">
+                    <input type="button" type="submit" value="registrar" class="input--button">
+                </div>
+            </div>
+            
             <!-- contenido para los Registros -->
                 <div class="div--registros">
                     <h1>Registros</h1>
