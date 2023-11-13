@@ -19,7 +19,22 @@ html {
     font-family: 'DM Sans', sans-serif;
     min-width: 320px;
 }
-
+header {
+    position: sticky;
+    top: 0px;
+    animation: adjust-header linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 1;
+}
+@keyframes adjust-header {
+    to {
+        background:  rgb(169, 215, 221, 0.5);
+        backdrop-filter: blur(5px);
+        font-size: 12px;
+        height: 50px;
+    }
+}
 header .menu-section {
     display: flex;
 }
