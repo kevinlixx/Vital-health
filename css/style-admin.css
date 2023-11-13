@@ -42,7 +42,8 @@ header .figure_header{
     height: 40px;
     position: relative;
     display: flex;
-    margin-top: 1px;
+    margin-left: 15px;
+    margin-top: 3px;
 }
 .menu-section{
     display: none;
@@ -212,7 +213,7 @@ main{
     border-radius: 22px;
     box-shadow: 3px 6px 29px 4px var(--fountain);
     position: absolute;
-    margin-top: 20px;
+    margin-top: 81px;
     z-index: 1;
 }
 .div--ventanaRegistro{
@@ -226,7 +227,7 @@ main{
     border-radius: 22px;
     box-shadow: 3px 6px 29px 4px var(--fountain);
     position: absolute;
-    margin-top: 20px;
+    margin-top: 81px;
     z-index: 1;
 }
 .cerrar-ventana{
@@ -297,6 +298,330 @@ main{
     width: 50px;
 }
 
+
+/* quienes somos */
+
+/* titulo */
+.div--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    height: auto;
+    width: auto;
+    /* margin: 10px; */
+    margin-top: 1% ;
+}
+
+.text-colored {
+    font-size: 40px;
+    font-weight: 300px;
+    /* Centra el texto */
+    text-align: center;
+    /* Ajusta las palabras largas */
+    word-wrap: break-word;
+    /* Propiedad de gradiante para establecer la combinación de colores para el titulo */
+    background: linear-gradient(90deg, #3ca6b4, #f4a26c, #3e8e98);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: changeColor 5s linear infinite;
+    /* Añade un subrayado al texto */
+    position: relative;
+    overflow: hidden;
+}
+
+.text-colored::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3ca6b4;
+    transform: translateX(-100%);
+    animation: underlineAnimation 2s linear infinite;
+}
+
+@keyframes underlineAnimation {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Estilos para el texto slogan de presenteación p */
+.text-slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.text-slogan p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* historia */
+.div--info-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.div--info-me:nth-child(even) {
+    background-color: rgb(169, 215, 221, 0.5);
+}
+
+.row--right,
+.row--left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* "col-md-6", se utiliza como parte de un sistema de cuadrícula. */
+.col-md-6 {
+    justify-content: center;
+    display: flex;
+}
+
+.text {
+
+    text-align: center;
+    font-size: 1.5rem;
+    /* Cambia el orden en modo computadora */
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.text p {
+    margin-top: 10px;
+    text-align: justify;
+    font-weight: normal;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+@keyframes color-change {
+    0% {
+        color: #20D2C8;
+    }
+    50% {
+        color: #3ca6b4;
+    }
+    100% {
+        color: #3e8e98;
+    }
+}
+
+.text h1 {
+    color: #3e8e98;
+    animation: color-change 2s infinite;
+    font-weight:lighter;
+}
+
+/* Aplicación de animación para las imagenes */
+@keyframes escalar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.image_svg {
+    display: flex;
+    margin-top: 10px;
+    max-width: 100%;
+    justify-content: center;
+    animation: escalar 2s linear infinite;
+}
+.image_svg img {
+    width: auto;
+    height: auto;
+    max-width: 50%; 
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    border-radius: 10%;
+}
+
+/* Servicios */
+.text p {
+    display: flex;
+    align-items: center;
+    /* Ajusta el margen inferior según sea necesario */
+}
+/* Iconos */
+.text svg {
+    height: 35px;
+    width: calc(7rem - 1px);
+}
+
+/* Formulario de registro */
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+    max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    color: #3E8E98;
+    font-size: 15px; /* Ajusta el tamaño de fuente deseado */
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 2px solid #3E8E98;
+    border-radius: 6px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    font-size: 15px; /* Ajusta el tamaño de fuente deseado */
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+    font-size: 15px;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	width: 30%;
+    border: 2px solid #3E8E98;
+	font-weight: bold;
+	border-radius: 5px;
+    font-size: 15px ;
+    color: black;
+	transition: background-color 0.3s;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.formulario__btn:hover {
+	background-color: #3E8E98;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario_grupo-correcto .formulario_validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label {
+	color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_input {
+	border: 3px solid #bb2929;
+}
+
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+        font-size: 15px;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+
+}
 /* para el footer */
 .pie-pagina {
     position: relative;

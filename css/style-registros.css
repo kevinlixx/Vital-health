@@ -42,7 +42,8 @@ header .figure_header{
     height: 40px;
     position: relative;
     display: flex;
-    margin-top: 1px;
+    margin-left: 15px;
+    margin-top: 3px;
 }
 .menu-section{
     display: none;
