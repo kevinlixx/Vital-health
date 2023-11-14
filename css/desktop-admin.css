@@ -78,6 +78,7 @@ header .menu-section{
     }/*El tercer fotograma (100%) establece que el elemento se desplazará hacia abajo otros 15 píxeles*/
   }
 
+
 /* iniciar sesion  */
 .div--registros{
     width: 50%;
@@ -94,4 +95,43 @@ header .menu-section{
 }
 .div--formulario-export {
     width: 80%;
+}
+
+/* container index */
+.row--left {
+    flex-direction: row-reverse;
+}
+
+.row--right {
+    flex-direction: row;
+}
+
+.image_svg {
+    width: calc(45rem - 5px);
+    height: calc(360px - 5px);
+    margin-right: auto;
+}
+
+.image_svg img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+.div--info-me {
+    /*  padding: 10px; */
+}
+
+.text p {
+    font-size: 2rem;
+}
+
+.text h1 {
+    font-size: 4rem;
+}
+
+.text ul {
+    font-size: 20px;
+    margin-top: 5%;
 }
