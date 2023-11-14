@@ -16,25 +16,29 @@
 <body>
     <header>
         <section class="section_header">
-            <figure class="figure_header"> 
-                <img 
-                src="./img/logo_header.svg  " 
-                alt="logo de vital health"
-                />  
-                <figcaption></figcaption> 
-            </figure>
+            <a href="./index-ingreso_admin.html">
+                <figure class="figure_header"> 
+                    <img 
+                    src="./img/logo_header.svg  " 
+                    alt="logo de vital health"
+                    />  
+                    <figcaption></figcaption> 
+                </figure>
+            </a>
             <div class="menu menu-header">
+                <a href="./index-ingreso_admin.html">
                     <figure id="btn_menu">
                         <img src="./img/menu.svg" alt="menu"/>  
                         <figcaption></figcaption> 
-                    </figure>                
+                    </figure>    
+                </a>            
                 <div id="back_menu"></div>
                 <nav id="nav" class="menu-section">
                     <img src="img/logo_header.svg" alt="">
                     <ul> 
-                        <li><a href="./index-admin.html">Inicio</a></li>
+                        <li><a href="./index-ingreso_admin.html">Inicio</a></li>
                         <li><a href="./registros.html">Registros</a></li>
-                        <li><a href="javascript:abrirIngreso()" id="selected">Iniciar sesion</a></li>
+                        <li><a href="./index-admin.html" id="selected">Cerrar Sesión</a></li>
                     </ul>
                 </nav>
             </div>
@@ -167,26 +171,6 @@
         </div>
      </footer>
      <script src="js/script.js"></script>
-     <script>
-        /* funcion para el ingreso */
-        function abrirIngreso(){
-            document.getElementById("ventIngre").style.display="flex"
-            nav.style.right = "-250px";
-            background_menu.style.display = "none";
-            document.getElementById("ventRegis").style.display="none"
-        }
-        function cerrarIngreso(){
-            document.getElementById("ventIngre").style.display="none"
-        }
-        /* funcion para el registro */
-        function abrirRegistro(){
-            document.getElementById("ventRegis").style.display="flex"
-            document.getElementById("ventIngre").style.display="none"
-        }
-        function cerrarRegistro(){
-            document.getElementById("ventRegis").style.display="none"
-        }
-     </script>
      
 </body>
 </html>

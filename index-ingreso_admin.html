@@ -16,13 +16,15 @@
 <body>
     <header>
         <section class="section_header">
-            <figure class="figure_header"> 
-                <img 
-                src="./img/logo_header.svg  " 
-                alt="logo de vital health"
-                />  
-                <figcaption></figcaption> 
-            </figure>
+            <a href="./index-ingreso_admin.html">
+                <figure class="figure_header"> 
+                    <img 
+                    src="./img/logo_header.svg  " 
+                    alt="logo de vital health"
+                    />  
+                    <figcaption></figcaption> 
+                </figure>
+            </a>
             <div class="menu menu-header">
                     <figure id="btn_menu">
                         <img src="./img/menu.svg" alt="menu"/>  
@@ -32,46 +34,15 @@
                 <nav id="nav" class="menu-section">
                     <img src="img/logo_header.svg" alt="">
                     <ul> 
-                        <li><a href="./index-admin.html">Inicio</a></li>
-                        <li><a href="javascript:abrirIngreso()" id="selected">Iniciar sesion</a></li>
+                        <li><a href="./index-ingreso_admin.html">Inicio</a></li>
+                        <li><a href="./registros.html">Registros</a></li>
+                        <li><a href="./index-admin.html" id="selected">Cerrar Sesión</a></li>
                     </ul>
                 </nav>
             </div>
         </a>
     </header>
     <main>
-        <div class="container--ingreso">
-            <!-- ventana que emerge para iniciar sesion -->
-            <div class="div--ventana" id="ventIngre">
-                <div class="cerrar-ventana"><a href="javascript:cerrarIngreso()"><i class="fa-solid fa-xmark"></i></a></div>
-                <div>
-                    <h2 class="title--ventana">Iniciar sesión</h2>
-                    <input type="email" name="" placeholder="correo electronico" id="" class="input--inicio">
-                    <input type="password" name="" placeholder="contraseña" id="" class="input--inicio">
-                    <a href="./index-ingreso_admin.html"><input type="button" type="submit" value="ingresar" class="input--button"></a>
-                    <a href="javascript:abrirRegistro()" class="opcion--registro">registrarse</a>
-                </div>
-            </div>
-            <!-- ventana que emerge para registrarse -->
-            <div class="div--ventanaRegistro" id="ventRegis">
-                <div class="cerrar-ventana"><a href="javascript:cerrarRegistro()"><i class="fa-solid fa-xmark"></i></a></div>
-                <form action="/registro" method="post">
-                    <h2 class="title--ventana">Registrarse</h2>
-                    <div class="div--registro">
-                        <input type="text" id="firstName" placeholder="primer nombre"  class="input--registro">
-                        <input type="text" id="secondName" placeholder="segundo nombre" class="input--registro">
-                    </div>
-                    <div class="div--registro">
-                        <input type="text" id="firstLastName" placeholder="primer apellido"  class="input--registro">
-                        <input type="text" id="secondLastName" placeholder="segundo apellido"  class="input--registro">
-                    </div>
-                    <input type="email" name="" placeholder="correo electronico" id="email" class="input--inicio">
-                    <input type="password" name="" placeholder="contraseña" id="password" class="input--inicio">
-                    <input type="password" name="" placeholder="confirmar contraseña" id="" class="input--inicio">
-                    <input type="button" type="submit" id="registrar" value="registrar" class="input--button" onclick="registroAdmin()">
-                </form>
-            </div>
-        </div>
         <div id="background_main">
         <!-- quienes somos   -->
         <div class="div--container" id="quienes_somos">
@@ -525,28 +496,6 @@
 
 
      <script>
-        /* funcion para el ingreso */
-        function abrirIngreso(){
-            document.getElementById("ventIngre").style.display="flex"
-            nav.style.right = "-250px";
-            background_menu.style.display = "none";
-            document.getElementById("ventRegis").style.display="none"
-            document.getElementById("background_main").classList.add("borroso");
-        }
-        function cerrarIngreso(){
-            document.getElementById("ventIngre").style.display="none"
-            document.getElementById("background_main").classList.remove("borroso");
-        }
-        /* funcion para el registro */
-        function abrirRegistro(){
-            document.getElementById("ventRegis").style.display="flex"
-            document.getElementById("ventIngre").style.display="none"
-            document.getElementById("background_main").classList.add("borroso");
-        }
-        function cerrarRegistro(){
-            document.getElementById("ventRegis").style.display="none"
-            document.getElementById("background_main").classList.remove("borroso");
-        }
         function use(database) {
             const mongoClient = require("mongodb").MongoClient;
 
